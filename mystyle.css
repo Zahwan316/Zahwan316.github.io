@@ -1,0 +1,192 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: mainfont;
+    src: url(MinecraftRegular-Bmg3.otf);
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #85859e;
+    background-image: url("wallpaperdirt.jpg");
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 370px;
+    min-height: 300px;
+    background-color:#f4f4f4;
+    border-radius:8px;
+    padding:8px
+}
+
+.title-box{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2vh;
+    font-family: mainfont;
+}
+
+.main-box,.hasil-box{
+    width: 100%;
+    min-height:20vh;
+    padding:8px;
+    display: flex;
+}
+
+.main-box form{
+    width: 100%;
+}
+
+.main-box li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:4vh
+}
+
+.main-box label{
+    margin-bottom:2vh
+}
+
+.weight-input,.height-input,.btn-submit{
+    width: 100%;
+    height: 5vh;
+    border-radius:8px;
+    border:1px solid #b8b8b8;
+    padding:4px
+}
+
+.btn-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.height-input,.btn-submit{
+    width: 50%;
+    height: 5vh;
+}
+
+.btn-submit{
+    width: 30%; 
+    margin-left:6vw;
+    background-color:green;
+    color:white;
+    border:none;
+    cursor:pointer;
+    box-shadow:0 4px darkgreen;
+    position: relative;
+}
+
+.btn-submit:active{
+    box-shadow: none;
+    top:4px
+}
+
+/* ---------- */
+
+.hasil-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 10vh;
+    margin-bottom:2vh
+}
+
+.hasil-box img{
+    width: 100%;
+    height: 30vh;
+}
+
+.hasil-box h2{
+    font: mainfont;
+    color:white;
+    margin-bottom:1vh;
+}
+
+.btn-back{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-back button{
+    width: 90px;
+    height: 6vh;
+    background-color:green;
+    border:none;
+    cursor: pointer;
+    color:white;
+    border-radius: 8px;
+}
+
+.img-meme{
+    width: 100%;
+    height:30vh;
+}
+
+.img-meme img{
+    width: 100%;
+    height: 100%;
+}
+
+.boxhasil{
+    animation: zoom .1s 1;
+}
+
+@keyframes zoom{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.meme-pack,.meme-pack2{
+    position: absolute;
+    width:100%;
+    height:20vh;
+    top:0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.meme-pack img,.meme-pack2 img {
+    width: 120px;
+    height: 100px;
+}
+
+.meme-pack2{
+    position:absolute;
+    bottom:45vh !important
+}
+
+.mem1,.mem2,.mem3{
+    visibility: hidden;
+    
+}
